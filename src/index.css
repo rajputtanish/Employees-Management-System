@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+body {
+  background-color: #111111;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom Scrollbar removals */
+#tasklist::-webkit-scrollbar,
+#all-tasks-list::-webkit-scrollbar {
+  display: none;
+}
+
+#tasklist,
+#all-tasks-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
