@@ -1,23 +1,26 @@
 {
+  "homepage": "https://rajputtanish.github.io/Employees-Management-System",
   "name": "ems",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^13.5.0",
-    "@tailwindcss/vite": "^4.3.3",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "tailwindcss": "^4.3.3",
     "react-router": "^8.2.0",
     "react-router-dom": "^7.18.1",
     "react-scripts": "5.0.1",
+    "tailwindcss": "^4.3.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
@@ -27,7 +30,11 @@
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.4",
+    "gh-pages": "^6.3.0",
     "oxlint": "^1.75.0",
     "vite": "^8.2.0"
+  },
+  "allowScripts": {
+    "gh-pages@6.3.0": true
   }
 }
